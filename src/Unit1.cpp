@@ -286,7 +286,7 @@ void __fastcall TForm1::Image1MouseUp(TObject *Sender, TMouseButton Button, TShi
  // calculate board coordinates
  px = floor((float)X/20.0)-1;
  py = floor((float)Y/20.0)-1;
- if (px<0 || py<0 || px>=FIELDX || px>=FIELDY) return;
+ if (px<0 || py<0 || px>=FIELDX || py>=FIELDY) return;
  // test if available
  if (GetCell(px,py)!=0) return;
  // player move

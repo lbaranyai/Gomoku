@@ -22,7 +22,7 @@ is compiled to 32 bit systems, it is compatible from
 Windows XP but more recent version is recommended.
 
 The game is tiny program, using only 2.5 MB memory and
-2 MB disk space.
+4 MB disk space.
 
 3. Liability
 
