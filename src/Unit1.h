@@ -37,6 +37,7 @@ __published:	// IDE-managed Components
 	TImage *TileComputer;
 	TButton *Button2;
 	TTimer *Timer1;
+	TLabel *Label4;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
@@ -68,7 +69,8 @@ private:	// User declarations
 	int StepCount,HighlightIdx;
 	bool Running;
 	int ComputerX,ComputerY;
-    UnicodeString msgPlayerWin,msgComputerWin;
+    int WinPlayer,WinComputer;
+	UnicodeString msgPlayerWin,msgComputerWin;
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
 };

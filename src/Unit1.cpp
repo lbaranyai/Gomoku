@@ -26,6 +26,10 @@ void __fastcall TForm1::FormCreate(TObject *Sender)
  int i,wx,wy;
  UnicodeString AS;
 
+ // number of wins
+ WinPlayer = 0;
+ WinComputer = 0;
+ // preparing board
  drw = Image1->Canvas;
  wx = (20 - drw->TextWidth(L"XX"))/2;
  wy = (20 - drw->TextHeight(L"XX"))/2;
@@ -218,6 +222,7 @@ void __fastcall TForm1::TestForWin(int x,int y)
  int i,n,t;
  int dx[] = { 0, 1, 1, 1};
  int dy[] = { 1, 0, 1,-1};
+ UnicodeString AS;
 
  n=0;
  for (i=0;i<4;i++) {
@@ -230,11 +235,15 @@ void __fastcall TForm1::TestForWin(int x,int y)
   Timer1->Enabled = false;
   t = GetCell(x,y);
   if (t==2) {
+   WinPlayer++;
    i = Application->MessageBoxW(msgPlayerWin.c_str(),L"Gomoku",MB_OK);
   }
   if (t==1) {
+   WinComputer++;
    i = Application->MessageBoxW(msgComputerWin.c_str(),L"Gomoku",MB_OK);
   }
+  AS.printf(L"%d : %d",WinPlayer,WinComputer);
+  Label4->Caption = AS;
  }
 }
 //---------------------------------------------------------------------------

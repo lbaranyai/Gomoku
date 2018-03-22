@@ -36,17 +36,19 @@ object Form1: TForm1
     Caption = 'L'#233'p'#233'sek'
   end
   object Label2: TLabel
-    Left = 644
+    Left = 630
     Top = 8
     Width = 37
     Height = 13
     Caption = 'J'#225't'#233'kos'
   end
   object Label3: TLabel
-    Left = 644
-    Top = 40
+    Left = 700
+    Top = 8
     Width = 55
-    Height = 13
+    Height = 20
+    Align = alCustom
+    Alignment = taRightJustify
     Anchors = [akTop, akRight]
     Caption = 'Sz'#225'm'#237't'#243'g'#233'p'
   end
@@ -99,8 +101,8 @@ object Form1: TForm1
     Visible = False
   end
   object TileUser: TImage
-    Left = 722
-    Top = 8
+    Left = 630
+    Top = 34
     Width = 20
     Height = 20
     Picture.Data = {
@@ -159,8 +161,8 @@ object Form1: TForm1
       883FFF46883FFF45863EFF44843C}
   end
   object TileComputer: TImage
-    Left = 722
-    Top = 40
+    Left = 735
+    Top = 34
     Width = 20
     Height = 20
     Picture.Data = {
@@ -217,6 +219,22 @@ object Form1: TForm1
       2F8EFF2F2F8EFF2F2F8EFF313194FF323297FF34349DFF3636A2FF3636A3FF37
       37A6FF3838A9FF3939ACFF3939ACFF3939AEFF3A3AAFFF3A3AAFFF3A3AAFFF39
       39ACFF3939ACFF3838A8FF3737A5}
+  end
+  object Label4: TLabel
+    Left = 656
+    Top = 34
+    Width = 73
+    Height = 20
+    Alignment = taCenter
+    Anchors = [akLeft, akTop, akRight]
+    AutoSize = False
+    Caption = '0 : 0'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object Button1: TButton
     Left = 630
